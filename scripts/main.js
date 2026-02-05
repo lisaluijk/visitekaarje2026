@@ -1,6 +1,6 @@
 // Declareer vairabelen
 const apiURL = 'https://fdnd.directus.app/items/person/303'
-const parentElement = document.querySelector('main')
+const parentElement = document.querySelector('div:nth-of-type(2)')
 
 // Zwengel het script aan...
 startLoading(parentElement)
@@ -8,19 +8,8 @@ startLoading(parentElement)
 fetchJson(apiURL)
 .then(({data}) => {
 
-    
-   /*
-    data.forEach((person) => {
-        //parseCustomString(data.custom)
-        let element = document.createElement('article')
-        element.innerHTML = parseCard(person)
-        parentElement.appendChild(element)
-        })
-
-   */
-
     parseCustomString(data.custom)
-    writeHTML(parseCard(data))
+    parseCard(data, parentElement)
     stopLoading(parentElement)
 })
 
@@ -62,7 +51,7 @@ function parseCard(userData) {
             </tr>
         </table>
 
-        <p>Schoenmaat: ${userData.custom.schoenmaat}</p>
+        
     
     </article>
     `

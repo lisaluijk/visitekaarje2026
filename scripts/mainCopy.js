@@ -1,6 +1,6 @@
 // Declareer vairabelen
 const apiURL = 'https://fdnd.directus.app/items/person/303'
-const parentElement = document.querySelector('main')
+const parentElement = document.querySelector('div:nth-of-type(2)')
 
 // Zwengel het script aan...
 parentElement.classList.add('loading')

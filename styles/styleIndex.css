@@ -1,4 +1,4 @@
-button {
+button:first-of-type {
     border: none;
     background: url('/images/noteBook.png');
     background-size: cover;
@@ -8,4 +8,6 @@ button {
 
 }
 
-
+button[popovertarget="noteBook"] {
+    background-color: hotpink;
+}

@@ -6,7 +6,7 @@
     <title>VisiteKaartje</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleIndex.css">
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/mainCopy.js" defer></script>
     
 </head>
 <body>
@@ -16,13 +16,12 @@
 
     <main>
         <article>
-            <p>Hier wordt mijn kaartje ingeladen</p>
 
             <button aria-label="klik hier om mijn notities te bekijken" popovertarget="noteBook"></button>
 
             <div popover id="noteBook">
                 <h3>Leerdoel 1 – CSS-animaties & micro-animaties</h3>
-                <p>Ik wil mij verder ontwikkelen in het maken van CSS-animaties, met een specifieke focus op het ontwerpen en ontwikkelen van micro-animaties. Hierin wil ik actief oefenen en experimenteren.  
+                <p>Ik wil mij verder ontwikkelen in het maken van CSS-animaties, met een specifieke focus op het ontwerpen en ontwikkelen van micro-animaties. Hierin wil ik actief oefenen en experimenteren.<br>
                 Ik kies dit leerdoel omdat ik hier een sterke interesse in heb en het mij leuk lijkt om me hierin te verdiepen. Daarnaast dragen micro-animaties bij aan duidelijkere interfaces en een betere user experience door middel van heldere feedback en feedforward voor de gebruiker.</p>
                 
                 <h3>Leerdoel 2 – Tooling, code-architectuur & efficiëntie</h3>
@@ -36,6 +35,39 @@
                 Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door perfectionisme niet altijd alles af krijg. Daarnaast wil ik voorkomen dat ik mij te vroeg vastzet in één concept, zodat ik meer ruimte houd om te experimenteren en verschillende iteraties te verkennen.</p>
 
             </div>
+
+            <button popovertarget="schoolPasje">Schoolpasje</button>
+            
+            <div popover id="schoolPasje">
+                <p>hier wordt data ingeladen van de api</p>
+            </div>
+
+            <button popovertarget="telefoon">Telefoon</button>
+            
+            <div popover id="telefoon">
+                <p>Hier komen foto's</p>
+            </div>
+
+            <button popovertarget="oortjes">Oortjes</button>
+            
+            <div popover id="oortjes">
+                <p>Nu gaat een muziekje afspelen</p>
+            </div>
+
+            <button popovertarget="thema">Lampje</button>
+            
+            <div popover id="thema">
+                <p>Dark mode light mode etc</p>
+            </div>
+
+           
+            <form>
+                <label>
+                    <input type="checkbox" name="kleurThema" value="light"> kleurThema
+                </label>
+            </form>
+
+
 
         </article>
     </main>

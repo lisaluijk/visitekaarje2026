@@ -47,3 +47,33 @@ Ziek
 - Het concept verder definiëren
 - Zo snel mogelijk beginnen met coderen
 - Een minimale basis uitwerken voor de presentatie van vrijdag
+
+## Donderdag 5 februari
+
+### Wat heb ik vandaag gedaan?
+- **09:30-10:10** — Check-in klassikaal 
+- **10:20:10:55** — Leerdoelen concreet uitgeschreven en concept verder uitgewerkt.
+- **11:00-11:55** — Workshop gevolgd: HTML rulez
+- **12:00-12:30** — Mappenstructuur opgezet (na klassikale feedback) en begonnen met basis opzetten voor website
+- **12:30-13:15** — Pauze  
+- **13:15-13:50** — Gewerkt aan een popover-button setup
+- **14:00-15:10** — Button stylen en met Vasilis overlegd over hoe responsible maken
+- **15:20-16:00** — Gewerkt aan theming -> licht donker en de codePen doornemen
+- **16:10-16:25** — Check-out 
+- **16:30-16:45** — VMet Sanne theming probleem opgelost! 
+
+### Wat heb ik geleerd?
+- Heel veel codeprincipes en kennis weer opgehaald, ik merkte dat dit best diep was weggezakt.
+- Gewerkt aan mijn leerdoel waarin ik minder lang wil blijven hangen in het ontwerpprocces doordat ik mezelf een uur gaf om het concept nog wat verder uit te werken en een start te maken aan de schetsen. Hierna ben ik gelijk gaan coderen. En ben ik daarmee verder gegaan ondanks dat ik nog niet alle visuele aspecten had.
+- Theming: :root:has([value='light']:checked)...
+- Popovers
+
+### Wat ga ik morgen doen?
+- De theming toepassen waar ik vandaag bij geëindigd was
+- de buttons in een (responsive) grid verwerken
+- als ik tijd over heb beginnen aan de styling en content van de popovers
+
+### Handige tools die ik van classgenoten heb gekregen:
+animaties:  https://animista.net/play/basic/flip-scale-2
+icons:      https://fontawesome.com/icons
+Heel vet portfolio van Melvin: https://melvinvermast.nl/ 
