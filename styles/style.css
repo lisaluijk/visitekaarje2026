@@ -1,0 +1,21 @@
+:root {
+	--color-text:#042FAB;
+	--color-background:#F8F6F2;
+
+	--color-dark-green: #0A3323;
+	--color-light-green: #839958;
+    --color-beige: #F7F4D5;
+    --color-pink: #D3968C;
+    --color-blue: #105666;
+	--color-white: #FFF;
+	--color-black: #000;
+}
+
+body {
+    background-color: #F6D5B1;
+    background-image: url("/images/webisteBackgroung.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color-white);
+}
+
