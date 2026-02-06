@@ -66,14 +66,10 @@ fetchJson(apiURL).then(({data}) => {
 function parseCard(userData, targetElement) {
     targetElement.innerHTML = `
     <article>
+        <p>deze informatie wordt ingeladen vanuit de API</p>
         <h2>${userData.name}</h2>
         <p>${userData.nickname}</p>
-        <img src="${userData.profilecard}" alt="cute cat">
-        <table> 
-            <tr>
-                <td>Schoonmaat:</td><td></td>
-            </tr>
-        </table>
+        <img src='${userData.profilecard}' alt="cute cat">
     </article>
     `
 }

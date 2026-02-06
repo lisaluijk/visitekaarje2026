@@ -93,5 +93,7 @@ to do:
 
 1205 - pauze
 
+https://www.youtube.com/watch?v=xPuYbmmPdEM
+
 
 ### Wat heb ik vandaag gedaan?
