@@ -87,7 +87,11 @@ to do:
 - grid starten
 
 9:30 - verder met light dark
-11:20 pauze
-1135 verder 
+11:20 - pauze
+1135 - light/dark afgemaakt
+11 50 - code cleanen en comments opzetten
+
+1205 - pauze
+
 
 ### Wat heb ik vandaag gedaan?
