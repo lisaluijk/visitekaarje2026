@@ -1,28 +1,47 @@
-//source code API data ophalen: Justus ik snap deze code deels
 
-// Declareer vairabelen
+/*****************************************************************************
+ * Variabelen declareren
+ ****************************************************************************/
 
+
+// ==============================
 // API data opahalen
-const apiURL = 'https://fdnd.directus.app/items/person/303'
-const parentElement = document.querySelector('div:nth-of-type(2)')
+// ==============================
+//source:  API data ophalen: code van Justus | ik snap deze code tot nu toe deels
 
+const apiURL = 'https://fdnd.directus.app/items/person/303'
+const parentElement = document.getElementById("schoolPasje")
+
+// ==============================
 // Light dark mode (deze code gebruik ik omdat ik anders veel dubbele css code heb)
+// ==============================
+
 const lightRadio = document.querySelector('input[value="light"]')
 const darkRadio = document.querySelector('input[value="dark"]')
 //source: https://coreui.io/answers/how-to-detect-dark-mode-in-javascript/#:~:text=The%20most%20reliable%20solution%20is,Use%20window.
 const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
 
-// Zwengel het script aan...
 
-// Light dark mode
+
+/********************************************************************************
+ * Functies aanroepen
+ ******************************************************************************************/
+
+// ==============================
+// Light dark mode 
+// ==============================
 // source: https://aileenrae.co.uk/blog/programatically-check-uncheck-checkbox-javascript/
+
 if (isDarkMode) {
   darkRadio.checked = true
 } else {
   lightRadio.checked = true
 }
 
+// ==============================
 // API data opahalen
+// ==============================
+
 parentElement.classList.add('loading')
 
 fetchJson(apiURL).then(({data}) => {
@@ -32,11 +51,14 @@ fetchJson(apiURL).then(({data}) => {
     parentElement.classList.remove('loading')
 })
 
+/***************************************************************************************************************
+ * Alle functies
+ ******************************************************************************/
 
-// Alle functies
-
-
+// ==============================
 // API data opahalen
+// ==============================
+
 /*
 @param{*} userData an object containing user information from 
 */

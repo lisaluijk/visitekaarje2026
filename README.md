@@ -82,7 +82,7 @@ Heel vet portfolio van Melvin: https://melvinvermast.nl/
 ## Vrijdag 6 februari
 
 to do:
--light dark
+-light dark                     check!
 - opruimen en credits geven
 - grid starten
 

@@ -1,7 +1,11 @@
+/* Buttons */
+
 button {
     height: 2rem;
     margin: 1rem;
 }
+
+/* Notebook styling */
 
 button[popovertarget="noteBook"] {
     border: none;

@@ -1,3 +1,5 @@
+/* Basis styling */
+
 :root {
     color-scheme:light dark;
     --bg:light-dark(#F6D5B1, #BD9871);
@@ -14,6 +16,7 @@
 	--black: #000;
 }
 
+/* Light/dark mode */
 /* source: deel van de code samen gemaakt met Sanne */
 html:has( [value="light"]:checked ) {
   --theme:light;
