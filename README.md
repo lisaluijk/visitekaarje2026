@@ -77,3 +77,17 @@ Ziek
 animaties:  https://animista.net/play/basic/flip-scale-2
 icons:      https://fontawesome.com/icons
 Heel vet portfolio van Melvin: https://melvinvermast.nl/ 
+
+
+## Vrijdag 6 februari
+
+to do:
+-light dark
+- opruimen en credits geven
+- grid starten
+
+9:30 - verder met light dark
+11:20 pauze
+1135 verder 
+
+### Wat heb ik vandaag gedaan?

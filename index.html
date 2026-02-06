@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,27 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/styleIndex.css">
     <script src="scripts/mainCopy.js" defer></script>
-    
 </head>
+
 <body>
     <header>
         <h1>Visitekaartje</h1>
     </header>
 
     <main>
-        <article>
+        <!-- Licht-donker thema -->
+        <form>
+            <label>
+                <input type="radio" name="kleurThema" value="light"> light
+            </label>
 
+            <label>
+                <input type="radio" name="kleurThema" value="dark"> dark
+            </label>
+        </form>
+
+        <!-- notebook -->
+        <article>
             <button aria-label="klik hier om mijn notities te bekijken" popovertarget="noteBook"></button>
 
             <div popover id="noteBook">
@@ -35,41 +46,35 @@
                 Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door perfectionisme niet altijd alles af krijg. Daarnaast wil ik voorkomen dat ik mij te vroeg vastzet in één concept, zodat ik meer ruimte houd om te experimenteren en verschillende iteraties te verkennen.</p>
 
             </div>
+        </article>
 
+        <!-- Schoolpasje -->
+        <article>
             <button popovertarget="schoolPasje">Schoolpasje</button>
             
             <div popover id="schoolPasje">
                 <p>hier wordt data ingeladen van de api</p>
             </div>
+        </article>
 
+        <!-- Telefoon -->
+        <article>
             <button popovertarget="telefoon">Telefoon</button>
             
             <div popover id="telefoon">
                 <p>Hier komen foto's</p>
             </div>
+        </arLticle>
 
+        <!-- Oortjes -->
+        <article>
             <button popovertarget="oortjes">Oortjes</button>
             
             <div popover id="oortjes">
                 <p>Nu gaat een muziekje afspelen</p>
             </div>
+       </article>
 
-            <button popovertarget="thema">Lampje</button>
-            
-            <div popover id="thema">
-                <p>Dark mode light mode etc</p>
-            </div>
-
-           
-            <form>
-                <label>
-                    <input type="checkbox" name="kleurThema" value="light"> kleurThema
-                </label>
-            </form>
-
-
-
-        </article>
     </main>
 
     <footer>

@@ -1,6 +1,6 @@
 :root {
     color-scheme:light dark;
-    --bg:light-dark(#ffe, #036);
+    --bg:light-dark(#F6D5B1, #BD9871);
 	
 	--color-text:#042FAB;
 	--color-background:#F8F6F2;
@@ -14,20 +14,42 @@
 	--black: #000;
 }
 
-body {
-    background-color: #F6D5B1;
+/* source: deel van de code samen gemaakt met Sanne */
+html:has( [value="light"]:checked ) {
+  --theme:light;
+}
+
+html:has( [value="dark"]:checked ) {
+  --theme:dark;
+}
+
+@container style(--theme:light) {
+  label:has([ value="light"]) {
+    display:none;
+  }
+  body {
+    color-scheme: light;
+
+    background-color: var(--bg);
     background-image: url("/images/webisteBackgroung.png");
     background-size: contain;
     background-repeat: no-repeat;
     color: var(--dark-green);
+  }
 }
 
-/* @media (prefers-color-scheme: dark) {
+@container style(--theme:dark) {
+  label:has([ value="dark"]) {
+    display:none;
+  }
+  body {
+    color-scheme: dark;
 
-    body {
-        background-color: #BD9871;
-        background-image: url("/images/websiteBackgroundDark.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-}  */
+    background-color: #BD9871;
+    background-image: url("/images/websiteBackgroundDark.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+  }
+}
+

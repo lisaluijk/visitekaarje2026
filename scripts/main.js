@@ -1,3 +1,4 @@
+//source code API data ophalen: Justus ik snap deze code deels
 // Declareer vairabelen
 const apiURL = 'https://fdnd.directus.app/items/person/303'
 const parentElement = document.querySelector('div:nth-of-type(2)')

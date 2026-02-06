@@ -1,13 +1,13 @@
-button:first-of-type {
+button {
+    height: 2rem;
+    margin: 1rem;
+}
+
+button[popovertarget="noteBook"] {
     border: none;
     background: url('/images/noteBook.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 65vw;
     width: 50vw;
-
-}
-
-button[popovertarget="noteBook"] {
-    background-color: hotpink;
 }
