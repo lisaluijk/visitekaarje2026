@@ -81,19 +81,45 @@ Heel vet portfolio van Melvin: https://melvinvermast.nl/
 
 ## Vrijdag 6 februari
 
-to do:
--light dark                     check!
-- opruimen en credits geven
-- grid starten
-
-9:30 - verder met light dark
-11:20 - pauze
-1135 - light/dark afgemaakt
-11 50 - code cleanen en comments opzetten
-
-1205 - pauze
-
-https://www.youtube.com/watch?v=xPuYbmmPdEM
-
-
 ### Wat heb ik vandaag gedaan?
+- **09:30–11:20** — Verder gewerkt aan light/dark mode  
+- **11:20–11:35** — Pauze  
+- **11:35–11:50** — Light/dark mode afgerond  
+- **11:50–12:05** — Code opgeschoond, comments toegevoegd en credits vermeld  
+
+- **12:05–12:12** — Pauze  
+- **12:20–13:00** — Voorbereid voor het marktje door tekst toe te voegen en een video bekeken over CSS Grid (kennis opgefrist): https://www.youtube.com/watch?v=xPuYbmmPdEM
+- **13:00–14:00** — Marktje
+
+### Wat heb ik geleerd?
+Ik heb de basis van grids weer opgehaald. En ik heb ook geleerd hoe ik in javascript radiobuttons kan aanvinken.
+
+## Weekly check-out | sprint 0
+Het viel me best wel tegen hoe ver mijn codekennis was gezakt na een jaar. Dingen duurden veel langer dan ik dacht en ik moest ook hele simpele dingen weer even opzoeken. Het komt nu allemaal voorzichtig weer naar boven maar veel minder snel dan ik had gehoopt. Ik denk daarom dat ik mijn ontwerp iets bij moet stellen om het te gaan halen. Voor nu doe ik alles stapje voor stapje en dan kijk ik dinsdag middag wat ik allemaal wel en niet ga halen.
+
+Ondanks dat het dus minder soepel ging dan ik had verwacht ben ik wel trots op mezelf. Ik ben al begonnen met wat van mijn leerdoelen en ik kijk uit naar de rest van de minor en wat ik allemaal ga leren. Ook vind ik tot nu toe de klas gezellig.
+
+### Leerdoel 1 – CSS-animaties & micro-animaties
+Hier heb ik nog niet veel mee gedaan helaas.
+
+### Leerdoel 2 – Tooling, code-architectuur & efficiëntie
+Tijdens het werken ben ik hier al mee bezig geweest door er over na te denken en te vragen naar best practices en tips van docenten. 
+Ik moet nog wel goed kijken naar de functionele decompositie in mijn Javascript, hier heb ik alleen nog niet te tijd voor genomen.
+
+Ook heb ik al mijn eerste shortcut aangeleerd. Hier wil ik volgende week verder mee gaan.
+
+### Leerdoel 3 – Itereren binnen het ontwerpproces
+Hier ben ik al een beetje mee bezig geweest door eerst bezig te gaan met de principes coderen zonder vormgeving. Ook heb ik tijdens het uitwerken van mijn concept een wekker gezet en mezelf daar niet alle tijd voor gegeven. Toen de wekker ging ben ik ook gelijk verder gegaan met de volgende stap ook al wilde ik graag nog dingen afmaken.
+
+### Wat wil ik volgende week doen
+Volgende week wil ik aan de volgende dingen gaan werken
+
+#### Leerdoelen
+- Meer shortcuts aanleren
+- Functionele decompositie toepassen in mijn javascript code
+- Oefenen met animaties (iets nieuws proberen)
+
+#### Website
+- Annimaties toevoegen
+- Vormgeving van mijn website maken
+- Grid weer oefenen en toepassen
