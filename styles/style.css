@@ -1,19 +1,35 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+  /* margin: 0;
+  padding: 0;
+  list-style-type: none; */
+}
+
+img {
+	max-width: 100%;
+}
+
+
 /* Basis styling */
 
 :root {
     color-scheme:light dark;
     --bg:light-dark(#F6D5B1, #BD9871);
+    --paper:light-dark(#F7F4D5, #dcd8ab);
 	
-	--color-text:#042FAB;
-	--color-background:#F8F6F2;
+    --color-text:#042FAB;
+    --color-background:#F8F6F2;
 
-	--dark-green:light-dark(#0A3323, #021A11);
-	--light-green: #839958;
+    --dark-green:light-dark(#0A3323, #021A11);
+    --light-green: #839958;
     --beige: #F7F4D5;
     --pink: #D3968C;
     --blue: #105666;
-	--white: #FFF;
-	--black: #000;
+    --white: #FFF;
+    --black: #000;
 }
 
 /* Light/dark mode */

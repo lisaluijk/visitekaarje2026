@@ -123,3 +123,40 @@ Volgende week wil ik aan de volgende dingen gaan werken
 - Annimaties toevoegen
 - Vormgeving van mijn website maken
 - Grid weer oefenen en toepassen
+
+## Maandag 7 februari
+
+### Wat heb ik vandaag gedaan?
+- **09:30–10:15** — Kick further  
+- **10:15–10:30** — Koffie gehaald  
+- **10:30–11:00** — Pages gedeployed en README bijgewerkt  
+- **11:00–11:20** — API bijgewerkt   
+- **11:30–12:00** — Begonnen aan vormgeving; geprobeerd een grid op te zetten voor een responsive boekje, maar erachter gekomen dat dit op een andere manier moet  
+
+- **12:00–12:30** — Grid tutorial gekeken over responsiveness en oude code bekeken met een vergelijkbaar (maar niet identiek) concept  
+  - Tutorial: https://www.youtube.com/watch?v=3T0gjtXRNC0  
+
+- **12:30–13:00** — Pauze  
+- **13:00–13:55** — Book animation tutorial gekeken en begonnen met het namaken  
+  - Tutorial: https://www.youtube.com/watch?v=0kD6ff2J3BQ  
+
+ 
+- **14:10–15:00** — Tutorial verder nagemaakt  
+- **15:00–15:30** — Pauze  
+- **15:30–16:00** — Tutorial afgemaakt!!!  
+- **16:00–** — Check-out  
+
+### Wat heb ik geleerd?
+geleerd:
+backface visibility
+perspective
+transform origin
+
+en nieuwe manier van een functie opschrijven in javascript met switch
+
+### Wat ga ik morgen doen?
+vormgevingg!!!!!
+en grid
+en tut toepassen op de website
+pasje vormgeven!!!
+
