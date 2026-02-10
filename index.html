@@ -30,7 +30,7 @@
         </form>
 
         <!-- Leerdoelen -->
-        <article>
+        <article class="Boekje">
             <button aria-label="klik hier om mijn notities te bekijken" popovertarget="noteBook"></button>
 
             <div popover id="noteBook">
@@ -57,8 +57,66 @@
                 <p>Ik wil mij verbeteren in het itereren binnen het ontwerpproces. Als perfectionist heb ik de neiging om een concept te ver uit te werken voordat ik verderga naar de volgende stap. Ik wil leren om een concept meer als uitgangspunt te zien en dit later bij te schaven op basis van feedback en nieuwe inzichten.  
                 Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door perfectionisme niet altijd alles af krijg. Daarnaast wil ik voorkomen dat ik mij te vroeg vastzet in één concept, zodat ik meer ruimte houd om te experimenteren en verschillende iteraties te verkennen.</p>
                 </div>
-
             </div>
+
+        </article>
+
+        <!-- Boekje met annimatie -->
+
+        <article>
+
+            <button aria-label="klik hier om mijn notities te bekijken" popovertarget="Boekje">boekje met animatie</button>
+
+            <div popover id="Boekje">
+
+                <button id="prevBtn"><- prev</button>
+                <div id="book" class="book">
+                <!-- Paper 1   -->
+                <div id="p1" class="paper">
+                    <div class="front">
+                    <div id="f1" class="front-content">
+                        <h2> front 1</h2>
+                    </div>
+                    </div>
+                    <div id="b1" class="back">
+                    <div class="back-content">
+                        <h2> back 1</h2>  
+                    </div>
+                    </div>
+                </div>
+                
+                <!--  Paper 2  -->
+                <div id="p2" class="paper">
+                    <div class="front">
+                    <div id="f2" class="front-content">
+                        <h2> front 2</h2>
+                    </div>
+                    </div>
+                    <div id="b2" class="back">
+                    <div class="back-content">
+                        <h2> back 2</h2>  
+                    </div>
+                    </div>
+                </div>
+                
+                <!--  paper 3  -->
+                <div id="p3" class="paper">
+                    <div class="front">
+                    <div id="f3" class="front-content">
+                        <h2> front 3</h2>
+                    </div>
+                    </div>
+                    <div id="b3" class="back">
+                    <div class="back-content">
+                        <h2> back 3</h2>  
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+                <button id="nextBtn">next -> </button>
+            </div>
+
         </article>
 
         <!-- Metadata -->

@@ -2,7 +2,14 @@
 /*****************************************************************************
  * Variabelen declareren
  ****************************************************************************/
+// ==============================
+// Light dark mode (deze code gebruik ik omdat ik anders veel dubbele css code heb)
+// ==============================
 
+const lightRadio = document.querySelector('input[value="light"]')
+const darkRadio = document.querySelector('input[value="dark"]')
+//source: https://coreui.io/answers/how-to-detect-dark-mode-in-javascript/#:~:text=The%20most%20reliable%20solution%20is,Use%20window.
+const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
 
 // ==============================
 // API data opahalen
@@ -13,14 +20,17 @@ const apiURL = 'https://fdnd.directus.app/items/person/303'
 const parentElement = document.getElementById("schoolPasje")
 
 // ==============================
-// Light dark mode (deze code gebruik ik omdat ik anders veel dubbele css code heb)
+// Boek annimatie
 // ==============================
+// source: https://www.youtube.com/watch?v=0kD6ff2J3BQ  
+// references to dom elements
+const prevBtn = document.querySelector("#prevBtn");
+const nextBtn = document.querySelector("#nextBtn");
+const book = document.querySelector("#book");
 
-const lightRadio = document.querySelector('input[value="light"]')
-const darkRadio = document.querySelector('input[value="dark"]')
-//source: https://coreui.io/answers/how-to-detect-dark-mode-in-javascript/#:~:text=The%20most%20reliable%20solution%20is,Use%20window.
-const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
-
+const paper1 = document.querySelector("#p1");
+const paper2 = document.querySelector("#p2");
+const paper3 = document.querySelector("#p3");
 
 
 /********************************************************************************
@@ -51,6 +61,15 @@ fetchJson(apiURL).then(({data}) => {
     parentElement.classList.remove('loading')
 })
 
+// ==============================
+// Boek annimatie
+// ==============================
+// event listener
+prevBtn.addEventListener("click", goPrevPage);
+nextBtn.addEventListener("click", goNextPage);
+
+
+
 /***************************************************************************************************************
  * Alle functies
  ******************************************************************************/
@@ -79,3 +98,80 @@ async function fetchJson(url, payload = {}) {
     .then((response) => response.json())
     .catch((error) => error)
 }
+
+// ==============================
+// Boek annimatie
+// ==============================
+// bussiness logic
+let currentLocation = 1;
+let numOffPapers = 3;
+let maxLocation = numOffPapers + 1;
+
+// functions
+
+function openBook() {
+  book.style.transform = "translateX(50%)";
+  prevBtn.style.transform = "translateX(-180px)";
+  nextBtn.style.transform = "translateX(180px)";
+  
+}
+
+function closeBook(isAtBeginning) {
+  if(isAtBeginning){
+    book.style.transform = "translateX(0%)";
+  } else {
+    book.style.transform = "translateX(100%)";
+  }
+  prevBtn.style.transform = "translateX(0px)";
+  nextBtn.style.transform = "translateX(0px)";
+}
+
+function goNextPage() {
+  if (currentLocation < maxLocation) {
+    switch(currentLocation) {
+    case 1 : 
+      openBook();
+      paper1.classList.add("flipped");
+      paper1.style.zIndex = 1;
+      break;
+    case 2 :
+      paper2.classList.add("flipped");
+      paper2.style.zIndex = 2;
+      break;
+    case 3 :
+      paper3.classList.add("flipped");
+      paper3.style.zIndex = 3;
+      closeBook(false);
+      break;
+    default:
+      throw new Error("unknown state");
+    }
+    currentLocation ++;
+  }
+}
+
+function goPrevPage() {
+  if(currentLocation > 1) {
+    switch(currentLocation) {
+      case 2:
+        closeBook(true);
+        paper1.classList.remove("flipped");
+        paper1.style.zIndex = 3;
+        break;
+       case 3:
+        paper2.classList.remove("flipped");
+        paper2.style.zIndex = 2;
+        break;
+       case 4:
+        openBook();
+        paper3.classList.remove("flipped");
+        paper3.style.zIndex = 1;
+        break;
+      default:
+        throw new Error("unkown state");
+    }
+    currentLocation --;
+  }
+  
+}
+

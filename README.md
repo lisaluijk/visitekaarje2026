@@ -169,7 +169,10 @@ pasje vormgeven!!!
 -1100 workshop basis hygiene
 -1200 pause
 1230 wat dingen voor werk en ff instaleren (alles opzetten) en api aanvullen
--1300 
+-1300 beginnen aan overzetten van codepen naar website
 
 wat ik wil doen
 - toevoegen van de styling van Cyd
+
+bezig met leerdoelen/time management
+eerst flipbook toepassen op de site en volgende stap is hem dan responsive maken in codepne en als dat werkt op website toevoegen.
