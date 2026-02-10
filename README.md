@@ -172,7 +172,8 @@ pasje vormgeven!!!
 -1300 code bladerbaarboekje geimporteerd
 1345 to do lijstje maken
 1400 -1430 content aangepast
-1440  
+1440  vormgeving popover... lukt me niet dus wat anders
+1500 werken aan schoolpasje design
 
 wat ik wil doen
 - toevoegen van de styling van Cyd

@@ -86,12 +86,15 @@ nextBtn.addEventListener("click", goNextPage);
 
 function parseCard(userData, targetElement) {
     targetElement.innerHTML = `
-    <article>
-        <p>deze informatie wordt ingeladen vanuit de API</p>
-        <h2>${userData.name}</h2>
-        <p>${userData.nickname}</p>
-        <img src='${userData.profilecard}' alt="cute cat">
-    </article>
+    
+        <img src="${userData.avatar}">
+        <div class="textContent">
+          <h2>${userData.name}</h2>
+          <p>${userData.nickname}</p>
+          <p>${userData.bio}</p>
+        </div>
+  
+    
     `
 }
 

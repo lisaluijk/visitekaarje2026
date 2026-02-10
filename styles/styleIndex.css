@@ -7,7 +7,7 @@ button {
 
 /* Notebook styling */
 
-button[popovertarget="noteBook"] {
+/* button[popovertarget="noteBook"] {
     border: none;
     background: url('/images/noteBook.png');
     background-size: cover;
@@ -28,19 +28,17 @@ div#noteBook:popover-open  {
     display: grid;
     gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(350px, 500px));
-}
+} */
 
 
 div#Boekje:popover-open  {
-    /* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
-
+    
     height: 90vw;
     width: 90vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* font-size: 0.85rem; */
     
     background-color: pink;   
     color: black;
@@ -56,7 +54,8 @@ div#Boekje:popover-open  {
         position: relative;
         width: 250px;
         height: 400px;
-        /*   background-color: hotpink; */
+        /* margin: 1rem; */
+        /* background-color: hotpink; */
         transition: transform 0.5s;
     }
 
@@ -66,7 +65,7 @@ div#Boekje:popover-open  {
         height: 100%;
         top: 0;
         left: 0;
-        
+        /* margin: 1rem; */
         perspective: 1500px;
     }
 
@@ -132,6 +131,37 @@ div#Boekje:popover-open  {
         z-index: 1;
     }
 }
+
+div#schoolPasje:popover-open  {
+    background-color: white ;
+    color: black;
+    border: none;
+    border-radius: 1rem;
+    width: 30rem;
+    height: 18.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: grid;
+    grid-auto-flow: row;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: start;
+
+    & img {
+        grid-column: 1;
+    }
+
+    & .textContent {
+        grid-column: 2;
+        color: hotpink;
+    }
+
+
+}
+
+ 
 
 
 
