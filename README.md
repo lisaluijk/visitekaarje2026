@@ -124,7 +124,7 @@ Volgende week wil ik aan de volgende dingen gaan werken
 - Vormgeving van mijn website maken
 - Grid weer oefenen en toepassen
 
-## Maandag 7 februari
+## Maandag 9 februari
 
 ### Wat heb ik vandaag gedaan?
 - **09:30–10:15** — Kick further  
@@ -160,3 +160,16 @@ en grid
 en tut toepassen op de website
 pasje vormgeven!!!
 
+
+## Dinsdag 10 februari
+
+### Wat heb ik vandaag gedaan?
+- 09:30 kick off
+- 1000 workshop grid en flexbox
+-1100 workshop basis hygiene
+-1200 pause
+1230 wat dingen voor werk en ff instaleren (alles opzetten) en api aanvullen
+-1300 
+
+wat ik wil doen
+- toevoegen van de styling van Cyd
