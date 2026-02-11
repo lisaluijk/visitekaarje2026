@@ -26,7 +26,7 @@ main section {
 }
 
 
-.noteBook img {
+.noteBook img:first-of-type {
      @container style(--theme:dark){
         content: url(/images/noteBookDark.png);
     }
@@ -38,6 +38,10 @@ main section {
     align-self: center;
     justify-self: center;
 
+    
+}
+
+.schoolPas button img {
     @container style(--theme:dark){
         content: url(/images/schoolPassDark.png);
     }
@@ -170,30 +174,41 @@ div#Boekje:popover-open  {
     }
 }
 
+#schoolPasje::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px); /* optional blur */
+}
+
+
 div#schoolPasje:popover-open,  div#schoolPasjeAnderen:popover-open {
-    background-color: white ;
-    color: black;
+    background-color: var(--highlights);
+    color: var(--shadows);
     border: none;
     border-radius: 1rem;
-    width: 30rem;
-    height: 18.5rem;
+    width: 60vw;
+    height: 35vw;
     font-family: Arial, Helvetica, sans-serif;
+    border-right: 0.25rem solid var(--midtoneDark);
+    border-bottom: 0.3rem solid var(--midtoneDark);
 
     display: grid;
     grid-auto-flow: row;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    gap: 1rem;
+    grid-template-columns: 2fr 3fr;
+    gap: 2rem;
     padding: 1rem;
     align-items: start;
 
     & img {
         grid-column: 1;
+        align-self: center;
+        border-radius: 1rem;
     }
 
     & .textContent {
         grid-column: 2;
-        color: hotpink;
+        align-self: center;
+        /* color: var(--midtoneDark); */
     }
 
 

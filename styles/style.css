@@ -34,7 +34,7 @@ button {
 
     /* define colornames */
     --bg: var(--highlights);
-    --paper:light-dark(#F7F4D5, #dcd8ab);
+    --paper:light-dark(#F6FDFF, #EEEBE4);
 }
 
 /* Light/dark mode */
