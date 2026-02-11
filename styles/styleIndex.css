@@ -71,12 +71,13 @@ div#Boekje:popover-open {
   /* sizing */
   height: 70vw;
   width: 90vw;
+  overflow-x: hidden; 
 
   /* positioning */
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   /* color */
   border: none;
   background: none;
@@ -97,7 +98,7 @@ div#Boekje:popover-open {
     /* sizing */
     width: 35%;
     height: 70%;
-
+    
     /* positioning */
     position: relative;
 

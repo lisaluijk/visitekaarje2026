@@ -213,6 +213,8 @@ en nieuwe manier van een functie opschrijven in javascript met switch
 2035-2100 -hovers
 2105 2205 css cleanen
 2220 styling the book
+2245 cleanen
+2315
 
 
 ## Weekly check-out | sprint 0
