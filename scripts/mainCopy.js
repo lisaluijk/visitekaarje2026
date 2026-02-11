@@ -75,20 +75,28 @@ fetchJson(apiURL).then(({data}) => {
     parentElement.classList.remove('loading')
 })
 
+document.addEventListener("keydown", function (event) {
+  if (event.key === "r") {
+    console.log("You pressed r!")
+    parentElement.classList.add('loading')
+
+    randomClassmate = Math.floor(Math.random() * 52)
+
+    fetchJson2(apiURL2).then(({ data }) => {
+        //data.custom = JSON.parse(data.custom)
+        parseCard2(data[randomClassmate], parentElement)
+
+        //arrayLength = data.length -1
+        
+        parentElement.classList.remove('loading')
+      })
+  }
+});
+
+
 //tweede persoon
 
-parentElement2.classList.add('loading')
 
-randomClassmate = Math.floor(Math.random() * 52)
-
-fetchJson2(apiURL2).then(({ data }) => {
-    //data.custom = JSON.parse(data.custom)
-    parseCard2(data[randomClassmate], parentElement2)
-
-    //arrayLength = data.length -1
-    
-    parentElement2.classList.remove('loading')
-})
 
 // ==============================
 // Boek annimatie

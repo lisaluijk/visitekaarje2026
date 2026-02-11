@@ -209,6 +209,9 @@ en nieuwe manier van een functie opschrijven in javascript met switch
 - **19:50–20:05** — README bijgewerkt  
 
 20:05 pasje vormgeven
-2030 randomizer combinen met op r drukken
+2030- 2040 randomizer combinen met op r drukken
+2035-2100 -hovers
+21
+
 
 ## Weekly check-out | sprint 0

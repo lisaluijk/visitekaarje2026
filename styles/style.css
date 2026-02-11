@@ -21,6 +21,24 @@ button {
 
 }
 
+button:hover {
+  transform: rotate(5deg);
+}
+
+#lamp label:hover img {
+  /* transform: scale(1.05); */
+  content: url(/images/lampLightHover.png);
+  @container style(--theme:dark){
+        content: url(/images/lampDarkHover.png);
+    }
+}
+
+
+/* .schoolPas button img {
+    @container style(--theme:dark){
+        content: url(/images/schoolPassDark.png);
+    }
+} */
 
 /* Basis styling */
 
