@@ -93,7 +93,7 @@ Heel vet portfolio van Melvin: https://melvinvermast.nl/
 ### Wat heb ik geleerd?
 Ik heb de basis van grids weer opgehaald. En ik heb ook geleerd hoe ik in javascript radiobuttons kan aanvinken.
 
-## Weekly check-out | sprint 0
+## Weekly check-out | week 1 | sprint 0
 Het viel me best wel tegen hoe ver mijn codekennis was gezakt na een jaar. Dingen duurden veel langer dan ik dacht en ik moest ook hele simpele dingen weer even opzoeken. Het komt nu allemaal voorzichtig weer naar boven maar veel minder snel dan ik had gehoopt. Ik denk daarom dat ik mijn ontwerp iets bij moet stellen om het te gaan halen. Voor nu doe ik alles stapje voor stapje en dan kijk ik dinsdag middag wat ik allemaal wel en niet ga halen.
 
 Ondanks dat het dus minder soepel ging dan ik had verwacht ben ik wel trots op mezelf. Ik ben al begonnen met wat van mijn leerdoelen en ik kijk uit naar de rest van de minor en wat ik allemaal ga leren. Ook vind ik tot nu toe de klas gezellig.
@@ -205,16 +205,27 @@ en nieuwe manier van een functie opschrijven in javascript met switch
 - **16:20–16:50** — Pauze  
 - **16:50–17:45** — Verder gewerkt aan vormgeving  
 - **17:45** — Naar huis / avond  
+- **19:50–23:00** — Laatste loodjes
 
-- **19:50–20:05** — README bijgewerkt  
-
-20:05 pasje vormgeven
-2030- 2040 randomizer combinen met op r drukken
-2035-2100 -hovers
-2105 2205 css cleanen
-2220 styling the book
-2245 cleanen
-2315
+### Wat heb ik geleerd vandaag?
+Vandaag had ik eindelijk het gevoel dat ik er weer een beetje in zat. Mijn skills zijn nog steeds niet waar ik zou willen dat ze zijn maar het begint erop te lijken. 
+Concrete dingen die ik heb geleerd:
+- 
 
 
-## Weekly check-out | sprint 0
+## Weekly check-out | week 2 | sprint 0
+
+
+# Bronvermelding
+
+## Filmpjes die ik heb bekeken
+- **flip book** https://www.youtube.com/watch?v=0kD6ff2J3BQ  
+- **grid** https://www.youtube.com/watch?v=xPuYbmmPdEM
+-**responsive grid** https://www.youtube.com/watch?v=3T0gjtXRNC0  
+
+## Code
+- **API data ophalen** Workshop/code van Justus
+- **flip book** https://www.youtube.com/watch?v=0kD6ff2J3BQ  
+- **detecting system preferences in JS** https://coreui.io/answers/how-to-detect-dark-mode-in-javascript/#:~:text=The%20most%20reliable%20solution%20is,Use%20window.
+- **checking a radiobutton in JS** https://aileenrae.co.uk/blog/programatically-check-uncheck-checkbox-javascript/
+- **light/dark mode logica voor mijn concept** Code samen met Sanne geschreven
