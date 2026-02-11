@@ -1,24 +1,189 @@
+/********************/
+/* MARK: Variables  */
+/********************/
+
+:root {
+  /* color & theme */
+  color-scheme: light dark;
+
+  /* define colors */
+  --shadows: light-dark(#2D4F7A, #30242D);
+  --highlights: light-dark(#EEEBE4, #FFC490);
+  --midtoneLight: light-dark(#F29C91, #F9686B);
+  --midtoneDark: light-dark(#518ACF, #75364B);
+
+  /* define colornames */
+  --bg: var(--highlights);
+  --paper: light-dark(#F6FDFF, #EEEBE4);
+}
+
+/********************/
+/* MARK: Fonts      */
+/********************/
+
+@font-face {
+	font-family: "ESKlarheitKurrent";
+	src: url('../fonts/ESKlarheitKurrent-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "ESKlarheitKurrent";
+	src: url('../fonts/ESKlarheitKurrent-Medium.ttf');
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "ESKlarheitKurrent";
+	src: url('../fonts/ESKlarheitKurrent-Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "ESKlarheitKurrent";
+	src: url('../fonts/ESKlarheitKurrent-Extralight.ttf');
+	font-weight: 200;
+}
+
 /**************/
-/* CSS REMEDY */
+/* MARK: CSS REMEDY */
 /**************/
 
-/* MARK: Variabelen;
-
-*, *::after, *::before {
+/* *, *::after, *::before {
   box-sizing:border-box;  
-  /* margin: 0;
+  margin: 0;
   padding: 0;
   list-style-type: none; 
-}*/
+} */
+
+* {
+	font-family: "ESKlarheitKurrent", Arial, Helvetica, sans-serif;
+	color:var(--shadows);
+	font-size: 1rem;	
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
+
+
+
+/********************/
+/* MARK: Theming    */
+/********************/
+
+/* source: deel van de code samen gemaakt met Sanne */
+
+html:has([value="light"]:checked) {
+  --theme: light;
+}
+
+html:has([value="dark"]:checked) {
+  --theme: dark;
+}
+
+
+/********************/
+/* MARK: Light Theme */
+/********************/
+
+@container style(--theme:light) {
+
+  label:has([value="light"]) {
+    display: none;
+  }
+
+  body {
+    /* color */
+    color-scheme: light;
+    background-color: var(--bg);
+    background-image: url("/images/bgWebsiteLight.png");
+    color: var(--shadows);
+
+    /* sizing */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+
+/********************/
+/* MARK: Dark Theme */
+/********************/
+
+@container style(--theme:dark) {
+
+  label:has([value="dark"]) {
+    display: none;
+  }
+
+  body {
+    /* color */
+    color-scheme: dark;
+    background-color: #FFC490;
+    background-image: url("/images/bgWebsiteDark.png");
+
+    /* sizing */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+/********************/
+/* MARK: Theme Image Swaps */
+/********************/
+
+.noteBook img:first-of-type {
+  @container style(--theme:dark) {
+    content: url(/images/noteBookDark.png);
+  }
+}
+
+.schoolPas button img {
+  @container style(--theme:dark) {
+    content: url(/images/schoolPassDark.png);
+  }
+}
+
+
+/********************/
+/* MARK: Responsive */
+/********************/
+
+/* background image based on width */
+/* 
+@media (min-width: 768px) {
+  body {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-size: contain;
+  }
+} */
+
+
+/********************/
+/* MARK: Components */
+/********************/
 
 button {
   background: none;
   border: none;
-
 }
 
 button:hover {
@@ -26,75 +191,19 @@ button:hover {
 }
 
 #lamp label:hover img {
-  /* transform: scale(1.05); */
+  /* color / content */
   content: url(/images/lampLightHover.png);
-  @container style(--theme:dark){
-        content: url(/images/lampDarkHover.png);
-    }
-}
 
-
-/* .schoolPas button img {
-    @container style(--theme:dark){
-        content: url(/images/schoolPassDark.png);
-    }
-} */
-
-/* Basis styling */
-
-:root {
-    color-scheme:light dark;
-    /* define colors */
-    --shadows:light-dark(#2D4F7A, #30242D); 
-    --highlights: light-dark(#EEEBE4, #FFC490); 
-    --midtoneLight: light-dark(#F29C91, #F9686B); 
-    --midtoneDark: light-dark(#518ACF, #75364B); 
-
-    /* define colornames */
-    --bg: var(--highlights);
-    --paper:light-dark(#F6FDFF, #EEEBE4);
-}
-
-/* Light/dark mode */
-/* source: deel van de code samen gemaakt met Sanne */
-html:has( [value="light"]:checked ) {
-  --theme:light;
-}
-
-html:has( [value="dark"]:checked ) {
-  --theme:dark;
-}
-
-@container style(--theme:light) {
-  label:has([ value="light"]) {
-    display:none;
-  }
-  body {
-    color-scheme: light;
-
-    background-color: var(--bg);
-    background-image: url("/images/bgWebsiteLight.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: var(--dark-green);
+  @container style(--theme:dark) {
+    content: url(/images/lampDarkHover.png);
   }
 }
 
-@container style(--theme:dark) {
-  label:has([ value="dark"]) {
-    display:none;
-  }
-  body {
-    color-scheme: dark;
+/********************/
+/* MARK: Utility classes */
+/********************/
 
-    background-color: #FFC490;
-    background-image: url("/images/bgWebsiteDark.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-  }
+.styleBackdrop::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
 }
-
-
-
-

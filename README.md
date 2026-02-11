@@ -211,7 +211,8 @@ en nieuwe manier van een functie opschrijven in javascript met switch
 20:05 pasje vormgeven
 2030- 2040 randomizer combinen met op r drukken
 2035-2100 -hovers
-21
+2105 2205 css cleanen
+2220 styling the book
 
 
 ## Weekly check-out | sprint 0
