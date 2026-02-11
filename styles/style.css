@@ -1,6 +1,9 @@
 /**************/
 /* CSS REMEDY */
 /**************/
+
+/* MARK: Variabelen;
+
 *, *::after, *::before {
   box-sizing:border-box;  
   /* margin: 0;

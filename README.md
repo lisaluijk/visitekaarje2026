@@ -175,6 +175,11 @@ pasje vormgeven!!!
 1440  vormgeving popover... lukt me niet dus wat anders
 1500 werken aan schoolpasje design
 
+wat heb ik geleerd
+wat utility classes zijn en hoe je die kan toepassen in je code
+expextations managen I guess
+
+
 wat ik wil doen
 - toevoegen van de styling van Cyd
 
@@ -183,3 +188,10 @@ to do boekje:
 
 bezig met leerdoelen/time management
 eerst flipbook toepassen op de site en volgende stap is hem dan responsive maken in codepne en als dat werkt op website toevoegen.
+
+## Woensdag 11 februari
+
+### Wat heb ik vandaag gedaan?
+930 - kick off en code review
+10:15 - installeren en alles opzetten + laatste dingetje om gitub in orde te maken voor de oplevering
+1040 - 

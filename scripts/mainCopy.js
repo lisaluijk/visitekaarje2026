@@ -1,4 +1,4 @@
-
+/* MARK: Variabelen;
 /*****************************************************************************
  * Variabelen declareren
  ****************************************************************************/
@@ -17,6 +17,7 @@ const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
 //source:  API data ophalen: code van Justus | ik snap deze code tot nu toe deels
 
 const apiURL = 'https://fdnd.directus.app/items/person/303'
+// ?fields=first_name,last_name,avatar.description
 const parentElement = document.getElementById("schoolPasje")
 
 // ==============================
@@ -51,7 +52,7 @@ if (isDarkMode) {
 }
 
 // ==============================
-// API data opahalen
+// API data ophalen
 // ==============================
 
 parentElement.classList.add('loading')
@@ -93,8 +94,6 @@ function parseCard(userData, targetElement) {
           <p>${userData.nickname}</p>
           <p>${userData.bio}</p>
         </div>
-  
-    
     `
 }
 
