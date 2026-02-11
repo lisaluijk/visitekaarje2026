@@ -23,9 +23,15 @@ const parentElement = document.getElementById("schoolPasje")
 //https://fdnd.directus.app/items/person/?fields=id,name,github_handle
 
 
-const apiURL2 = 'https://fdnd.directus.app/items/person/309'
+const apiURL2 = 'https://fdnd.directus.app/items/person?filter[squads][squad_id][tribe][name]=CMD%20Minor%20Web%20Dev&filter[squads][squad_id][cohort]=2526&fields=id,name,nickname,bio,avatar'
 // ?fields=first_name,last_name,avatar.description
 const parentElement2 = document.getElementById("schoolPasjeAnderen")
+let randomClassmate  
+let arrayLength
+
+
+
+//https://fdnd.directus.app/items/person?filter[squads][squad_id][tribe][name]=CMD%20Minor%20Web%20Dev&filter[squads][squad_id][cohort]=2526&fields=id,name,nickname,bio,avatar
 
 // ==============================
 // Boek annimatie
@@ -75,10 +81,29 @@ fetchJson(apiURL).then(({data}) => {
 
 parentElement2.classList.add('loading')
 
+// fetchJson(apiURL2).then(({ data }) => {
+//     console.log(data.length)
+//     randomClassmate = getRandomInt(arrayLength)
+//     console.log("fliep flap")
+//     console.log(randomClassmate)
+// })
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+let peopje = 9
+randomClassmate = getRandomInt(52)
 
 fetchJson2(apiURL2).then(({ data }) => {
-    data.custom = JSON.parse(data.custom)
-    parseCard2(data, parentElement2)
+    //data.custom = JSON.parse(data.custom)
+    parseCard2(data[randomClassmate], parentElement2)
+
+    arrayLength = data.length -1
+    console.log(arrayLength)
+
+    console.log("random number:")
+    console.log(getRandomInt(arrayLength));
     
     parentElement2.classList.remove('loading')
 })
@@ -121,11 +146,36 @@ async function fetchJson(url, payload = {}) {
     .catch((error) => error)
 }
 
- console.log("test")
+ 
+//   let arrayLength = data.length -1
+//     console.log(arrayLength)
+//     randomClassmate = getRandomInt(arrayLength)
 
-// tweede ophalen
+//     console.log("random number:")
+//     console.log(randomClassmate);
+
+// // tweede ophalen
+// function parseCard2(userData2, targetElement2) {
+//   targetElement2.innerHTML = `   
+//         <img src="${userData2.avatar}">
+//         <div class="textContent">
+//           <h2>${userData2[7].name}</h2>
+//           <p>${userData2[7].nickname}</p>
+//           <p>${userData2.bio}</p>
+//         </div>
+//     `
+// }
+
+
+
+console.log("fliep")
+
+let randomPerson = data[randomClassmate]
+
+let test = 5
+
 function parseCard2(userData2, targetElement2) {
-    targetElement2.innerHTML = `   
+  targetElement2.innerHTML = `   
         <img src="${userData2.avatar}">
         <div class="textContent">
           <h2>${userData2.name}</h2>
@@ -134,6 +184,7 @@ function parseCard2(userData2, targetElement2) {
         </div>
     `
 }
+
 
 async function fetchJson2(url, payload = {}) {
   return await fetch(url, payload)

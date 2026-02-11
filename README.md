@@ -197,5 +197,7 @@ eerst flipbook toepassen op de site en volgende stap is hem dan responsive maken
 1040 - bezig met andere api data inladen
 11;14 verder met andere data inlkaden | problemen met cutoom enzo als ik een filter toevoeg aan de url maar het werkt yay
 
-1150
+1150 verder werken daan api
+1230 pauze
+1300 
 
