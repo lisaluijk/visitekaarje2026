@@ -215,6 +215,45 @@ Concrete dingen die ik heb geleerd:
 
 ## Weekly check-out | week 2 | sprint 0
 
+### Reflectie
+Ik vond deze sprint erg zwaar. Het tempo lag hoog, en hoewel ik het ook erg leuk en interessant vond vond ik het lastig dat er zoveel van mijn kennis was weggezakt. Ik had nog zo veel dingen willen toevoegen en doen maar had daar helaas geen tijd voor. Ook vind ik de kwaliteit van mijn code niet goed genoeg. Ik ben wel trots op wat ik oplever ondanks alles omdat ik wel mijn best heb gedaan. Ook heb ik mijn verwachtingen bij moeten stellen wat ik lastig vond maar wel trots op ben. Ik heb best wel wat nieuwe dingen geleerd maar vooral weer oude kennis naar boven gehaald.
+
+Wat ik van dit project mee neem is dat ik wat realistischer mag zijn over hoe lang dingen duren voor mij.
+
+### Leerdoelen
+#### Leerdoel 1 – CSS-animaties & micro-animaties
+Ik heb uiteindelijk niet genoeg tijd gehad om me hier volledig in te storten. Ik heb hier en daar enkele kleine animaties toegevoegd maar ik had er graag nog veel meer op mijn site bij gehad. 
+
+#### Leerdoel 2 – Tooling, code-architectuur & efficiëntie
+Ook in dit leerdoel ben ik nog niet heel erg gegroeid. Mijn kennis was zo ver weggezakt dat het me niet lukte naast alle basiskennis weer ophalen/zoeken ook nog heel sterk bezig te zijn met mijn code-architectuur. Wel heb ik hier vragen over gesteld aan docenten en klasgenoten. "Wat is de meest semanitsche manier om ... te doen?" "Heeft u tips voor naamgeving?" etc.
+Ik heb tot nu toe nog maar 1 shortcut aangeleerd maar vanaf volgende week is mijn doel om er elke dag 1 nieuwe te behandelen.
+Ik heb nog geen functionele decompositie toegevoegd maar ga dit in mijn volgende project uitproberen.
+
+#### Leerdoel 3 – Itereren binnen het ontwerpproces
+Ik denk dat ik hier zeker al een stapje in verder ben gekomen. Ik ben bewust zo snel mogleijk begonnen met coderen zodra ik een basis concept had en zelfs nog zonder ontwerp. Dit maakte het later wel moeilijk voor mij omdat mijn site er erg lang niet "mooi" uit zag waardoor ik vertrouwen in mezelf verloor. Ik wil hier dus een betere balans in zoeken. 
+Ook heb ik timers voor mezelf gezet als ik bezig ging met ontwerpen om te voorkomen dat ik te lang bleef hangen.
+
+
+### Wat ik nog graag toe had willen voegen
+- Loading animation bij het inladen van de API data
+- Iets doen met incomplete data van klasgenoten
+- Meer responsive maken
+- Code veel netter opzetten
+- Nog meer toepassen van de workshop basishygiene van Cyd
+- De JS code voor het boekje zelf schrijven/uitvogelen
+- Meer animaties toevoegen
+- Een gastenboekje met een form waar je dingen achter kan laten
+- Een paar leuke comments toevoegen met ::after bij enkele klasgenoten. Eg; bij Arvid Luijk iets over onze achternaam, of bij mijn vrienden een smiley/hartje oid
+- Een animatie die een hint geeft naar de easter egg van op r drukken voor een random klasgenoot
+- ^^ Ook random kleuren geven aan de website en miss de positie aanpassen van de items zodat het lijkt alsof het helemaal iem anders bureau is
+- Met svg's werken waardoor ik ook meer kan met animatie
+- Overal consistentere naamgeven gebruiken
+- Oordopjes die muziek afspelen uit een array die ik leuk vindt
+- Een telefoon met wat leuke foto's
+- Nog meer artikelen op mijn bureau waarmee je kan interacteren
+- Met elk onderdeel een interactie -> koffie kopje leegdrinken bv
+- Meer animaties
+
 
 # Bronvermelding
 
