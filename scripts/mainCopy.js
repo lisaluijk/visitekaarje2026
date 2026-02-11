@@ -16,9 +16,16 @@ const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
 // ==============================
 //source:  API data ophalen: code van Justus | ik snap deze code tot nu toe deels
 
-const apiURL = 'https://fdnd.directus.app/items/person/303'
+const apiURL = 'https://fdnd.directus.app/items/person/303?fields=id,name,nickname,bio,avatar'
 // ?fields=first_name,last_name,avatar.description
 const parentElement = document.getElementById("schoolPasje")
+
+//https://fdnd.directus.app/items/person/?fields=id,name,github_handle
+
+
+const apiURL2 = 'https://fdnd.directus.app/items/person/309'
+// ?fields=first_name,last_name,avatar.description
+const parentElement2 = document.getElementById("schoolPasjeAnderen")
 
 // ==============================
 // Boek annimatie
@@ -58,10 +65,22 @@ if (isDarkMode) {
 parentElement.classList.add('loading')
 
 fetchJson(apiURL).then(({data}) => {
-    data.custom = JSON.parse(data.custom)
+    // data.custom = JSON.parse(data.custom)
     parseCard(data, parentElement)
     
     parentElement.classList.remove('loading')
+})
+
+//yweede persoon
+
+parentElement2.classList.add('loading')
+
+
+fetchJson2(apiURL2).then(({ data }) => {
+    data.custom = JSON.parse(data.custom)
+    parseCard2(data, parentElement2)
+    
+    parentElement2.classList.remove('loading')
 })
 
 // ==============================
@@ -87,7 +106,6 @@ nextBtn.addEventListener("click", goNextPage);
 
 function parseCard(userData, targetElement) {
     targetElement.innerHTML = `
-    
         <img src="${userData.avatar}">
         <div class="textContent">
           <h2>${userData.name}</h2>
@@ -98,6 +116,26 @@ function parseCard(userData, targetElement) {
 }
 
 async function fetchJson(url, payload = {}) {
+  return await fetch(url, payload)
+    .then((response) => response.json())
+    .catch((error) => error)
+}
+
+ console.log("test")
+
+// tweede ophalen
+function parseCard2(userData2, targetElement2) {
+    targetElement2.innerHTML = `   
+        <img src="${userData2.avatar}">
+        <div class="textContent">
+          <h2>${userData2.name}</h2>
+          <p>${userData2.nickname}</p>
+          <p>${userData2.bio}</p>
+        </div>
+    `
+}
+
+async function fetchJson2(url, payload = {}) {
   return await fetch(url, payload)
     .then((response) => response.json())
     .catch((error) => error)

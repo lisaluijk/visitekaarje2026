@@ -132,7 +132,7 @@ div#Boekje:popover-open  {
     }
 }
 
-div#schoolPasje:popover-open  {
+div#schoolPasje:popover-open,  div#schoolPasjeAnderen:popover-open {
     background-color: white ;
     color: black;
     border: none;

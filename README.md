@@ -194,4 +194,8 @@ eerst flipbook toepassen op de site en volgende stap is hem dan responsive maken
 ### Wat heb ik vandaag gedaan?
 930 - kick off en code review
 10:15 - installeren en alles opzetten + laatste dingetje om gitub in orde te maken voor de oplevering
-1040 - 
+1040 - bezig met andere api data inladen
+11;14 verder met andere data inlkaden | problemen met cutoom enzo als ik een filter toevoeg aan de url maar het werkt yay
+
+1150
+
