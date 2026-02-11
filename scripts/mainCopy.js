@@ -16,13 +16,12 @@ const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
 // ==============================
 //source:  API data ophalen: code van Justus | ik snap deze code tot nu toe deels
 
+//mezelf
 const apiURL = 'https://fdnd.directus.app/items/person/303?fields=id,name,nickname,bio,avatar'
 // ?fields=first_name,last_name,avatar.description
 const parentElement = document.getElementById("schoolPasje")
 
-//https://fdnd.directus.app/items/person/?fields=id,name,github_handle
-
-
+//anderen random
 const apiURL2 = 'https://fdnd.directus.app/items/person?filter[squads][squad_id][tribe][name]=CMD%20Minor%20Web%20Dev&filter[squads][squad_id][cohort]=2526&fields=id,name,nickname,bio,avatar'
 // ?fields=first_name,last_name,avatar.description
 const parentElement2 = document.getElementById("schoolPasjeAnderen")
@@ -73,37 +72,20 @@ parentElement.classList.add('loading')
 fetchJson(apiURL).then(({data}) => {
     // data.custom = JSON.parse(data.custom)
     parseCard(data, parentElement)
-    
     parentElement.classList.remove('loading')
 })
 
-//yweede persoon
+//tweede persoon
 
 parentElement2.classList.add('loading')
 
-// fetchJson(apiURL2).then(({ data }) => {
-//     console.log(data.length)
-//     randomClassmate = getRandomInt(arrayLength)
-//     console.log("fliep flap")
-//     console.log(randomClassmate)
-// })
-
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-
-let peopje = 9
-randomClassmate = getRandomInt(52)
+randomClassmate = Math.floor(Math.random() * 52)
 
 fetchJson2(apiURL2).then(({ data }) => {
     //data.custom = JSON.parse(data.custom)
     parseCard2(data[randomClassmate], parentElement2)
 
-    arrayLength = data.length -1
-    console.log(arrayLength)
-
-    console.log("random number:")
-    console.log(getRandomInt(arrayLength));
+    //arrayLength = data.length -1
     
     parentElement2.classList.remove('loading')
 })
@@ -165,14 +147,6 @@ async function fetchJson(url, payload = {}) {
 //         </div>
 //     `
 // }
-
-
-
-console.log("fliep")
-
-let randomPerson = data[randomClassmate]
-
-let test = 5
 
 function parseCard2(userData2, targetElement2) {
   targetElement2.innerHTML = `   

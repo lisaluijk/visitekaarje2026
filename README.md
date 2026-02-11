@@ -199,5 +199,7 @@ eerst flipbook toepassen op de site en volgende stap is hem dan responsive maken
 
 1150 verder werken daan api
 1230 pauze
-1300 
+1300 semi werkend krijgen van de randomizer!!!!!
+1340 pauze
+1400 cleanen en netjes maken
 
