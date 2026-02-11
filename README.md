@@ -60,7 +60,7 @@ Ziek
 - **14:00-15:10** — Button stylen en met Vasilis overlegd over hoe responsible maken
 - **15:20-16:00** — Gewerkt aan theming -> licht donker en de codePen doornemen
 - **16:10-16:25** — Check-out 
-- **16:30-16:45** — VMet Sanne theming probleem opgelost! 
+- **16:30-16:45** — Met Sanne theming probleem opgelost! 
 
 ### Wat heb ik geleerd?
 - Heel veel codeprincipes en kennis weer opgehaald, ik merkte dat dit best diep was weggezakt.
@@ -86,8 +86,7 @@ Heel vet portfolio van Melvin: https://melvinvermast.nl/
 - **11:20–11:35** — Pauze  
 - **11:35–11:50** — Light/dark mode afgerond  
 - **11:50–12:05** — Code opgeschoond, comments toegevoegd en credits vermeld  
-
-- **12:05–12:12** — Pauze  
+- **12:05–12:20** — Pauze  
 - **12:20–13:00** — Voorbereid voor het marktje door tekst toe te voegen en een video bekeken over CSS Grid (kennis opgefrist): https://www.youtube.com/watch?v=xPuYbmmPdEM
 - **13:00–14:00** — Marktje
 
@@ -132,74 +131,81 @@ Volgende week wil ik aan de volgende dingen gaan werken
 - **10:30–11:00** — Pages gedeployed en README bijgewerkt  
 - **11:00–11:20** — API bijgewerkt   
 - **11:30–12:00** — Begonnen aan vormgeving; geprobeerd een grid op te zetten voor een responsive boekje, maar erachter gekomen dat dit op een andere manier moet  
-
-- **12:00–12:30** — Grid tutorial gekeken over responsiveness en oude code bekeken met een vergelijkbaar (maar niet identiek) concept  
+- **12:00–12:30** — Grid tutorial gekeken over responsiveness en oude code bekeken met een vergelijkbaar concept om te kijken of ik het op dezelfde manier kon oplossen. Alleen ging dit helaas niet werken.
   - Tutorial: https://www.youtube.com/watch?v=3T0gjtXRNC0  
-
 - **12:30–13:00** — Pauze  
-- **13:00–13:55** — Book animation tutorial gekeken en begonnen met het namaken  
+- **13:00–13:55** — Book animation tutorial gekeken en begonnen met het namaken  van de tutorial
   - Tutorial: https://www.youtube.com/watch?v=0kD6ff2J3BQ  
-
- 
 - **14:10–15:00** — Tutorial verder nagemaakt  
 - **15:00–15:30** — Pauze  
 - **15:30–16:00** — Tutorial afgemaakt!!!  
-- **16:00–** — Check-out  
+- **16:00–16:30** — Check-out  
 
 ### Wat heb ik geleerd?
-geleerd:
-backface visibility
-perspective
-transform origin
+-backface visibility
+-perspective
+-transform origin
 
 en nieuwe manier van een functie opschrijven in javascript met switch
 
 ### Wat ga ik morgen doen?
-vormgevingg!!!!!
-en grid
-en tut toepassen op de website
-pasje vormgeven!!!
+- Aan de vormgeving beginnen
+- In de vormgeving wil ik grid toepassen
+- De tutorial die ik in codepen heb gevolgd toepassen op mijn website
+- Begin maken aan het vormgeven van het pasje.
 
 
 ## Dinsdag 10 februari
 
 ### Wat heb ik vandaag gedaan?
-- 09:30 kick off
-- 1000 workshop grid en flexbox
--1100 workshop basis hygiene
--1200 pause
-1230 wat dingen voor werk en ff instaleren (alles opzetten) en api aanvullen
--1300 code bladerbaarboekje geimporteerd
-1345 to do lijstje maken
-1400 -1430 content aangepast
-1440  vormgeving popover... lukt me niet dus wat anders
-1500 werken aan schoolpasje design
 
-wat heb ik geleerd
-wat utility classes zijn en hoe je die kan toepassen in je code
-expextations managen I guess
+- **09:30–10:00** — Kick-off  
+- **10:00–11:00** — Workshop Grid en Flexbox  
+- **11:00–12:00** — Workshop Basis Hygiene in code
+- **12:00–12:30** — Pauze  
+- **12:30–13:00** — Enkele dingen voor mijn werk en de API aangevuld  
+- **13:00–13:45** — Code van bladerbaar boekje geïmporteerd naar mijn website
+- **13:45–14:00** — To-do lijst opgesteld  
+- **14:00–14:30** — Content aangepast  
+- **14:40–15:00** — Geprobeerd popover vorm te geven, dit ging niet helemaal op de manier dat ik wilde dus ben ik met wat anders verder gegaan.
+- **15:00–16:00** — Gewerkt aan design voor mijn schoolpasje 
+- **16:00–16:30** — Check-out  
 
 
-wat ik wil doen
-- toevoegen van de styling van Cyd
+## Wat heb ik geleerd
+- Wat utility classes zijn en hoe je die kan toepassen in je code
+- Dat mijn inschattingen van hoe lang dingen duren er echt ver naast zitten op het moment
+- Hoe ik mijn verwachtingen iets meer kan managen
 
-to do boekje:
-- 
 
-bezig met leerdoelen/time management
-eerst flipbook toepassen op de site en volgende stap is hem dan responsive maken in codepne en als dat werkt op website toevoegen.
+
+
+### Wat ga ik morgen doen?
+- De styling uit de workshop met Cyd toepassen op mijn design
+- Mijn website klaar maken voor het inleveren
 
 ## Woensdag 11 februari
 
 ### Wat heb ik vandaag gedaan?
-930 - kick off en code review
-10:15 - installeren en alles opzetten + laatste dingetje om gitub in orde te maken voor de oplevering
-1040 - bezig met andere api data inladen
-11;14 verder met andere data inlkaden | problemen met cutoom enzo als ik een filter toevoeg aan de url maar het werkt yay
 
-1150 verder werken daan api
-1230 pauze
-1300 semi werkend krijgen van de randomizer!!!!!
-1340 pauze
-1400 cleanen en netjes maken
+- **09:30–10:15** — Kick-off en code review  
+- **10:15–10:40** — Mezelf installeren en alles opzetten + laatste GitHub-dingen in orde maken voor oplevering  
+- **10:40–11:15** — Start aan API-data inladen van klasgenoten  
+- **11:15–11:50** — Verder met extra data inladen; problemen met custom filter in de URL, maar uiteindelijk werkend gekregen  
+- **11:50–12:30** — Verder gewerkt aan de API data met randomizer
+- **12:30–13:00** — Pauze  
+- **13:00–13:40** — Randomizer semi-werkend gekregen  
+- **13:40–14:00** — Pauze  
+- **14:00–14:10** — Code opgeschoond en overbodige dingen verwijderd  
+- **14:10–14:55** — Begonnen met vormgeving: schetsen en snelle illustraties maken  
+- **15:05–15:15** — Gelachten om de "you won a new iphone" popup van Jelle  
+- **15:15–15:20** — Dark mode versie gemaakt voor vormgeving  
+- **15:20–16:00** — Begin vormgeving toepassen op mijn website 
+- **16:00–16:20** — Check-out  
+- **16:20–16:50** — Pauze  
+- **16:50–17:45** — Verder gewerkt aan vormgeving  
+- **17:45** — Naar huis / avond  
 
+- **19:50–20:05** — README bijgewerkt  
+
+## Weekly check-out | sprint 0

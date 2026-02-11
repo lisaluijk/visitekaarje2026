@@ -15,24 +15,26 @@ img {
 	max-width: 100%;
 }
 
+button {
+  background: none;
+  border: none;
+
+}
+
 
 /* Basis styling */
 
 :root {
     color-scheme:light dark;
-    --bg:light-dark(#F6D5B1, #BD9871);
-    --paper:light-dark(#F7F4D5, #dcd8ab);
-	
-    --color-text:#042FAB;
-    --color-background:#F8F6F2;
+    /* define colors */
+    --shadows:light-dark(#2D4F7A, #30242D); 
+    --highlights: light-dark(#EEEBE4, #FFC490); 
+    --midtoneLight: light-dark(#F29C91, #F9686B); 
+    --midtoneDark: light-dark(#518ACF, #75364B); 
 
-    --dark-green:light-dark(#0A3323, #021A11);
-    --light-green: #839958;
-    --beige: #F7F4D5;
-    --pink: #D3968C;
-    --blue: #105666;
-    --white: #FFF;
-    --black: #000;
+    /* define colornames */
+    --bg: var(--highlights);
+    --paper:light-dark(#F7F4D5, #dcd8ab);
 }
 
 /* Light/dark mode */
@@ -53,7 +55,7 @@ html:has( [value="dark"]:checked ) {
     color-scheme: light;
 
     background-color: var(--bg);
-    background-image: url("/images/webisteBackgroung.png");
+    background-image: url("/images/bgWebsiteLight.png");
     background-size: contain;
     background-repeat: no-repeat;
     color: var(--dark-green);
@@ -67,11 +69,14 @@ html:has( [value="dark"]:checked ) {
   body {
     color-scheme: dark;
 
-    background-color: #BD9871;
-    background-image: url("/images/websiteBackgroundDark.png");
+    background-color: #FFC490;
+    background-image: url("/images/bgWebsiteDark.png");
     background-size: contain;
     background-repeat: no-repeat;
     
   }
 }
+
+
+
 

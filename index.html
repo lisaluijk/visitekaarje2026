@@ -11,161 +11,168 @@
 
 <body>
     <header>
-        <h1>Visitekaartje Lisa Luijkman</h1>
+        <!-- <h1>Visitekaartje Lisa Luijkman</h1>
         <p>Voor dit project ben ik direct aan de slag gegaan met mijn leerdoel waarvoor ik minder tijd wil besteden aan het uitwerken van het concept en sneller te beginnen met de ontwikkeling. Het concept schaaf ik gaandeweg bij op basis van voortgang en inzichten. Om die reden is de vormgeving nog niet ver uitgewerkt en heb ik mij in deze fase voornamelijk gericht op het vertalen van de principes naar code.</p>
         <p>Mijn concept is om mijn bureau na te maken en dan kan je interacteren met de verschillende objecten waardoor je mij beter kan leren kennen. Dus ik zou zeggen probeer het uit!</p>
-        <p>Mijn volgende stap wordt beginnen aan de vormgeving.</p>
+        <p>Mijn volgende stap wordt beginnen aan de vormgeving.</p> -->
     </header>
 
     <main>
-        <!-- Licht-donker thema -->
-        <form>
-            <label>
-                <input type="radio" name="kleurThema" value="light"> light
-            </label>
+        <section>
 
-            <label>
-                <input type="radio" name="kleurThema" value="dark"> dark
-            </label>
-        </form>
+            <!-- Licht-donker thema -->
+            <form id="lamp">
+                <label>
+                    <input type="radio" name="kleurThema" value="light"> 
+                    <img src="/images/lampDark.png" alt="illustration of a lamp">
+                </label>
 
+                <label>
+                    <input type="radio" name="kleurThema" value="dark">
+                    <img src="/images/lampLight.png" alt="illustration of a lamo">
+                </label>
+            </form>
+            
 
-        </article>
+            <!-- Boekje met annimatie -->
 
-        <!-- Boekje met annimatie -->
+            <article class="noteBook">
 
-        <article>
+                <button aria-label="klik hier om mijn notities te bekijken" popovertarget="Boekje">
+                    <img src="/images/noteBookLight.png" alt="illustratie van een notitieboekje">
+                </button>
 
-            <button aria-label="klik hier om mijn notities te bekijken" popovertarget="Boekje">boekje met animatie</button>
+                <div popover id="Boekje">
+                    <!-- <button>close</button> -->
 
-            <div popover id="Boekje">
-                <!-- <button>close</button> -->
-
-                <button id="prevBtn"><- prev</button>
-                <div id="book" class="book">
-                <!-- Paper 1   -->
-                <div id="p1" class="paper">
-                    <div class="front">
-                        <div id="f1" class="front-content">
-                            <h2>Notes</h2>
+                    <button id="prevBtn"><- prev</button>
+                    <div id="book" class="book">
+                    <!-- Paper 1   -->
+                    <div id="p1" class="paper">
+                        <div class="front">
+                            <div id="f1" class="front-content">
+                                <h2>Notes</h2>
+                            </div>
+                        </div>
+                        <div id="b1" class="back">
+                            <div class="back-content">
+                                <h3> dit boekje is van: Lisa</h3>  
+                            </div>
                         </div>
                     </div>
-                    <div id="b1" class="back">
-                        <div class="back-content">
-                            <h3> dit boekje is van: Lisa</h3>  
+                    
+                    <!--  Paper 2  -->
+                    <div id="p2" class="paper">
+                        <div class="front">
+                            <div id="f2" class="front-content">
+                                <p>Hier komt nog wat leuks vormgeving wise</p>
+                            </div>
+                        </div>
+                        <div id="b2" class="back">
+                            <div class="back-content">
+                                <h3>Leerdoel 1 – CSS-animaties & micro-animaties</h3>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!--  paper 3  -->
+                    <div id="p3" class="paper">
+                        <div class="front">
+                            <div id="f3" class="front-content">
+                                <p>
+                                    Ik wil mij verder ontwikkelen in het maken van CSS-animaties, met een specifieke focus op het ontwerpen en ontwikkelen van micro-animaties. Hierin wil ik actief oefenen en experimenteren.<br>
+                                    Ik kies dit leerdoel omdat ik hier een sterke interesse in heb en het mij leuk lijkt om me hierin te verdiepen. Daarnaast dragen micro-animaties bij aan duidelijkere interfaces en een betere user experience door middel van heldere feedback en feedforward voor de gebruiker.
+                                </p> 
+                            </div>
+                        </div>
+                        <div id="b3" class="back">
+                            <div class="back-content">
+                                <h3>Leerdoel 2 – Tooling, code-architectuur & efficiëntie</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  paper 4  -->
+                    <div id="p4" class="paper">
+                        <div class="front">
+                            <div id="f4" class="front-content">
+                                <p>
+                                    Ik wil beter worden in het gebruik van tooling en het opzetten van een nette, overzichtelijke code-architectuur. Concreet wil ik mij verdiepen in het gebruik van Emmet en andere shortcuts om sneller en efficiënter te kunnen coderen.  
+                                    Daarnaast wil ik functionele decompositie toepassen in mijn code en mezelf dit vanaf nu aanleren. 
+                                    Bovendien wil ik werken met een duidelijke mappenstructuur, consistente syntax, het correct toepassen van camelCase en een vaste naamgeving voor variabelen en functies. 
+                                    Ik werk aan dit leerdoel omdat het mij denk ik op de lange termijn tijd gaat besparen. En mijn code professioneler maakt wat zorgt voor beter overzicht. Door deze werkwijze nu al aan te leren, wordt het een vaste gewoonte.
+                                </p> 
+                            </div>
+                        </div>
+                        <div id="b4" class="back">
+                            <div class="back-content">
+                                <h3>Leerdoel 3 – Itereren binnen het ontwerpproces</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  paper 5  -->
+                    <div id="p5" class="paper">
+                        <div class="front">
+                            <div id="f5" class="front-content">
+                                <p>
+                                    Ik wil mij verbeteren in het itereren binnen het ontwerpproces. Als perfectionist heb ik de neiging om een concept te ver uit te werken voordat ik verderga naar de volgende stap. Ik wil leren om een concept meer als uitgangspunt te zien en dit later bij te schaven op basis van feedback en nieuwe inzichten.  
+                                    Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door perfectionisme niet altijd alles af krijg. Daarnaast wil ik voorkomen dat ik mij te vroeg vastzet in één concept, zodat ik meer ruimte houd om te experimenteren en verschillende iteraties te verkennen.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="b5" class="back">
+                            <div class="back-content">
+                                <p>achterkant van boekje</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                    
+                    <button id="nextBtn">next -> </button>
+                </div>
+
+            </article>
+
+            <!-- Metadata -->
+            <article class="schoolPas">
+                <button aria-label="klik hier om mijn schoolpasje te bekijken" popovertarget="schoolPasje">
+                    <img src="/images/schoolPassLight.png" alt="illustratie van een pasje">
+                </button>
                 
-                <!--  Paper 2  -->
-                <div id="p2" class="paper">
-                    <div class="front">
-                        <div id="f2" class="front-content">
-                            <p>Hier komt nog wat leuks vormgeving wise</p>
-                        </div>
-                    </div>
-                    <div id="b2" class="back">
-                        <div class="back-content">
-                            <h3>Leerdoel 1 – CSS-animaties & micro-animaties</h3>
-                        </div>
-                    </div>
+                <div popover id="schoolPasje">
+                    <p>hier wordt data ingeladen van de api</p>
                 </div>
+            </article>
+
+            <article>
+                <button popovertarget="schoolPasjeAnderen">Schoolpasje anderen</button>
                 
-                <!--  paper 3  -->
-                <div id="p3" class="paper">
-                    <div class="front">
-                        <div id="f3" class="front-content">
-                            <p>
-                                Ik wil mij verder ontwikkelen in het maken van CSS-animaties, met een specifieke focus op het ontwerpen en ontwikkelen van micro-animaties. Hierin wil ik actief oefenen en experimenteren.<br>
-                                Ik kies dit leerdoel omdat ik hier een sterke interesse in heb en het mij leuk lijkt om me hierin te verdiepen. Daarnaast dragen micro-animaties bij aan duidelijkere interfaces en een betere user experience door middel van heldere feedback en feedforward voor de gebruiker.
-                            </p> 
-                        </div>
-                    </div>
-                    <div id="b3" class="back">
-                        <div class="back-content">
-                            <h3>Leerdoel 2 – Tooling, code-architectuur & efficiëntie</h3>
-                        </div>
-                    </div>
+                <div popover id="schoolPasjeAnderen">
+                    <p>hier wordt data ingeladen van de api</p>
                 </div>
+            </article>
 
-                <!--  paper 4  -->
-                <div id="p4" class="paper">
-                    <div class="front">
-                        <div id="f4" class="front-content">
-                            <p>
-                                Ik wil beter worden in het gebruik van tooling en het opzetten van een nette, overzichtelijke code-architectuur. Concreet wil ik mij verdiepen in het gebruik van Emmet en andere shortcuts om sneller en efficiënter te kunnen coderen.  
-                                Daarnaast wil ik functionele decompositie toepassen in mijn code en mezelf dit vanaf nu aanleren. 
-                                Bovendien wil ik werken met een duidelijke mappenstructuur, consistente syntax, het correct toepassen van camelCase en een vaste naamgeving voor variabelen en functies. 
-                                Ik werk aan dit leerdoel omdat het mij denk ik op de lange termijn tijd gaat besparen. En mijn code professioneler maakt wat zorgt voor beter overzicht. Door deze werkwijze nu al aan te leren, wordt het een vaste gewoonte.
-                            </p> 
-                        </div>
-                    </div>
-                    <div id="b4" class="back">
-                        <div class="back-content">
-                            <h3>Leerdoel 3 – Itereren binnen het ontwerpproces</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <!--  paper 5  -->
-                <div id="p5" class="paper">
-                    <div class="front">
-                        <div id="f5" class="front-content">
-                            <p>
-                                Ik wil mij verbeteren in het itereren binnen het ontwerpproces. Als perfectionist heb ik de neiging om een concept te ver uit te werken voordat ik verderga naar de volgende stap. Ik wil leren om een concept meer als uitgangspunt te zien en dit later bij te schaven op basis van feedback en nieuwe inzichten.  
-                                Ik werk hieraan om mijn time management te verbeteren, omdat ik merk dat ik door perfectionisme niet altijd alles af krijg. Daarnaast wil ik voorkomen dat ik mij te vroeg vastzet in één concept, zodat ik meer ruimte houd om te experimenteren en verschillende iteraties te verkennen.
-                            </p>
-                        </div>
-                    </div>
-                    <div id="b5" class="back">
-                        <div class="back-content">
-                            <p>achterkant van boekje</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <!-- Photo's -->
+            <!-- <article>
+                <button popovertarget="telefoon">Telefoon</button>
                 
-                <button id="nextBtn">next -> </button>
-            </div>
+                <div popover id="telefoon">
+                    <p>Hier komen foto's</p>
+                </div>
+            </arLticle>
 
-        </article>
-
-        <!-- Metadata -->
-        <article>
-            <button popovertarget="schoolPasje">Schoolpasje</button>
-            
-            <div popover id="schoolPasje">
-                <p>hier wordt data ingeladen van de api</p>
-            </div>
-        </article>
-
-         <article>
-            <button popovertarget="schoolPasjeAnderen">Schoolpasje anderen</button>
-            
-            <div popover id="schoolPasjeAnderen">
-                <p>hier wordt data ingeladen van de api</p>
-            </div>
-        </article>
-
-        <!-- Photo's -->
-        <article>
-            <button popovertarget="telefoon">Telefoon</button>
-            
-            <div popover id="telefoon">
-                <p>Hier komen foto's</p>
-            </div>
-        </arLticle>
-
-        <!-- Muziek -->
-        <article>
-            <button popovertarget="oortjes">Oortjes</button>
-            
-            <div popover id="oortjes">
-                <p>Nu gaat een muziekje afspelen</p>
-            </div>
-       </article>
-
+            <!-- Muziek -->
+            <!-- <article>
+                <button popovertarget="oortjes">Oortjes</button>
+                
+                <div popover id="oortjes">
+                    <p>Nu gaat een muziekje afspelen</p>
+                </div>
+        </article> --> 
+       
+        </section>
     </main>
 
     <footer>

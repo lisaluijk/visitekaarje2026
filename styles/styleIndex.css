@@ -1,8 +1,46 @@
 /* Buttons */
+main section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 
-button {
-    height: 2rem;
-    margin: 1rem;
+#lamp {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width: 25vw;
+    justify-self: end;
+}
+
+#lamp input {
+    display: none;
+}
+  
+
+.noteBook {
+    grid-column-start: 2;
+    grid-row-start: -2;
+    
+   
+
+}
+
+
+.noteBook img {
+     @container style(--theme:dark){
+        content: url(/images/noteBookDark.png);
+    }
+}
+
+.schoolPas {
+    grid-column-start: 1;
+    grid-row-start: -2;
+    align-self: center;
+    justify-self: center;
+
+    @container style(--theme:dark){
+        content: url(/images/schoolPassDark.png);
+    }
 }
 
 /* Notebook styling */
