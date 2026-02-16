@@ -109,7 +109,7 @@ html:has([value="dark"]:checked) {
     /* color */
     color-scheme: light;
     background-color: var(--bg);
-    background-image: url("/images/bgWebsiteLight.png");
+    background-image: url("./images/bgWebsiteLight.png");
     color: var(--shadows);
 
     /* sizing */
@@ -133,7 +133,7 @@ html:has([value="dark"]:checked) {
     /* color */
     color-scheme: dark;
     background-color: #FFC490;
-    background-image: url("/images/bgWebsiteDark.png");
+    background-image: url("./images/bgWebsiteDark.png");
 
     /* sizing */
     background-size: contain;
@@ -147,35 +147,15 @@ html:has([value="dark"]:checked) {
 
 .noteBook img:first-of-type {
   @container style(--theme:dark) {
-    content: url(/images/noteBookDark.png);
+    content: url(./images/noteBookDark.png);
   }
 }
 
 .schoolPas button img {
   @container style(--theme:dark) {
-    content: url(/images/schoolPassDark.png);
+    content: url(./images/schoolPassDark.png);
   }
 }
-
-
-/********************/
-/* MARK: Responsive */
-/********************/
-
-/* background image based on width */
-/* 
-@media (min-width: 768px) {
-  body {
-    background-size: contain;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    background-size: contain;
-  }
-} */
-
 
 /********************/
 /* MARK: Components */
@@ -192,10 +172,10 @@ button:hover {
 
 #lamp label:hover img {
   /* color / content */
-  content: url(/images/lampLightHover.png);
+  content: url(./images/lampLightHover.png);
 
   @container style(--theme:dark) {
-    content: url(/images/lampDarkHover.png);
+    content: url(./images/lampDarkHover.png);
   }
 }
 
